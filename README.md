@@ -1,4 +1,3 @@
-![imge](./documents/rag_workflow.jpg)
 
 [![Shipping files](https://github.com/neuefische/ds-rag-pipline/actions/workflows/workflow-02.yml/badge.svg?branch=main&event=workflow_dispatch)](https://github.com/neuefische/ds-rag-pipline/actions/workflows/workflow-02.yml)
 
@@ -54,3 +53,5 @@ OPENAI_API_KEY=<your openai api key>
     python -m pip install --upgrade pip
     pip install -r requirements.txt
     ```
+
+    ![imge](./documents/rag_workflow.jpg)
