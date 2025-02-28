@@ -1,4 +1,4 @@
-![](../documents/rag_workflow.jpg)
+![imge](../documents/rag_workflow.jpg)
 
 [![Shipping files](https://github.com/neuefische/ds-rag-pipline/actions/workflows/workflow-02.yml/badge.svg?branch=main&event=workflow_dispatch)](https://github.com/neuefische/ds-rag-pipline/actions/workflows/workflow-02.yml)
 
