@@ -51,4 +51,4 @@ GROQ_API_KEY=<your groq api key>
     pip install -r requirements.txt
     ```
 
-    ![imge](./documents/rag_workflow.jpg)
+    ![imge](./documents/rag_workflow.png)
