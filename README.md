@@ -182,3 +182,4 @@ RAG systems are deployed across numerous industries where combining retrieval wi
 - Ram, O., et al. (2023). "In-Context Retrieval-Augmented Language Models." *ACL 2023*. [arXiv:2302.00083](https://arxiv.org/abs/2302.00083)
 - Borgeaud, S., et al. (2022). "Improving language models by retrieving from trillions of tokens." *ICML 2022*. [arXiv:2112.04426](https://arxiv.org/abs/2112.04426)
 - Izacard, G., & Grave, E. (2021). "Leveraging Passage Retrieval with Generative Models for Open Domain Question Answering." *EACL 2021*. [arXiv:2007.01282](https://arxiv.org/abs/2007.01282)
+- A beginner’s guide to building a Retrieval Augmented Generation (RAG) application from scratch[Rag from scratch tutorial](https://learnbybuilding.ai/tutorial/rag-from-scratch/)
