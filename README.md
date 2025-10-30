@@ -86,6 +86,10 @@ GROQ_API_KEY=<your groq api key>
 
 ### RAG Workflow Explained
 
+[![RAG Workflow Video](https://img.youtube.com/vi/_HQ2H_0Ayy0/0.jpg)](https://youtu.be/_HQ2H_0Ayy0?si=YhNR2fJI-D4llrSo)
+
+*Click the image above to watch a video explanation of the RAG workflow*
+
 ![RAG Workflow Diagram](./Images/RAG_steps.png)
 
 The RAG system operates in two main stages: **Ingestion** (preparing your knowledge base) and **Inference** (answering user queries).
