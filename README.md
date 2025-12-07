@@ -1,17 +1,13 @@
 
-[![Shipping files](https://github.com/neuefische/ds-rag-pipline/actions/workflows/workflow-02.yml/badge.svg?branch=main&event=workflow_dispatch)](https://github.com/neuefische/ds-rag-pipline/actions/workflows/workflow-02.yml)
-
 ## Retrieval Augmented Generation (RAG) with LangChain
 
-This workshop teaches how to build RAG systems that overcome Large Language Model limitations by augmenting prompts with retrieved external information from documents.
+A multilingual RAG chatbot that lets you query your own PDF documents using Llama 3.1 (via Groq) and a Streamlit UI. Currently wired to medical and AI research PDFs, easily extensible to any document set.
 
-### What You'll Learn
+### About the project
 
 **Core Concept**: Build RAG systems that address LLM limitations (hallucinations, outdated knowledge, lack of domain-specific data) by retrieving relevant information from external documents and combining it with your queries.
 
-#### Learning Objectives
-
-By completing this workshop, you will:
+#### Learning Objectives:
 
 1. **Understand RAG fundamentals** - Learn why RAG is needed vs. fine-tuning, and how it provides transparent outputs with fewer hallucinations
 2. **Document processing** - Load PDFs and chunk text to fit LLM context windows
@@ -24,15 +20,28 @@ By completing this workshop, you will:
 
 - **LangChain** - Framework for LLM applications
 - **FAISS** - Facebook's similarity search library for vector storage
-- **HuggingFace Embeddings** - Open-source embedding models
+- **HuggingFace Embeddings** - Open-source multilingual embedding models
 - **Groq/Llama** - Free LLM inference
+- **Streamlit** - Web UI for the chat interface
 - **Sample data** - Research papers included for practice (pharmaceutical documentation and AI research)
 
-### Workshop Structure
+### Project Structure
 
-Two parallel notebooks are provided:
-- **RAG-Pipeline-Llama.ipynb** - Complete walkthrough with detailed explanations and working code
-- **RAG_Exercise_Notebook.ipynb** - Hands-on exercises with empty functions for you to implement
+```
+ds-rag-pipeline/
+├── app.py                      # Streamlit chat UI
+├── notebooks/
+│   ├── RAG_Pipeline_Tutorial.ipynb # Complete tutorial with working code
+│   └── faiss_index_multilingual/   # Pre-built vector index
+├── documents/                  # PDF documents to query
+│   ├── paracetamol.pdf         # German medical leaflet
+│   └── react_paper.pdf         # English AI research paper
+└── requirements.txt
+```
+
+**Notebook:** `RAG_Pipeline_Tutorial.ipynb` provides a complete walkthrough covering the full RAG pipeline, including optimizations like text cleaning and multilingual embeddings.
+
+**Streamlit App:** `app.py` provides a web-based chat interface using the trained model.
 
 The workshop covers 7 exercises that guide you through the 5-step RAG pipeline shown below.
 
@@ -81,6 +90,21 @@ GROQ_API_KEY=<your groq api key>
     python -m pip install --upgrade pip
     pip install -r requirements.txt
     ```
+
+## Running the Streamlit App
+
+After completing the notebooks (which create the FAISS index), you can run the chat UI:
+
+```bash
+streamlit run app.py
+```
+
+This opens a browser at `http://localhost:8501` with:
+- Chat interface for asking questions
+- Source citations showing which documents were used
+- Multilingual support (query in English or German)
+
+**Note:** The app requires the FAISS index to exist at `notebooks/faiss_index_multilingual/`. Run the Exercise Notebook first to generate it.
 
 ---
 
