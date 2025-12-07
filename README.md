@@ -43,7 +43,7 @@ ds-rag-pipeline/
 
 **Streamlit App:** `app.py` provides a web-based chat interface using the trained model.
 
-The workshop covers 7 exercises that guide you through the 5-step RAG pipeline shown below.
+The project covers 7 exercises that guide you through the 5-step RAG pipeline shown below.
 
 ### Prerequisites
 
