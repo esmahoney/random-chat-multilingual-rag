@@ -103,20 +103,12 @@ def main():
     with st.sidebar:
         st.header("API Key")
         
-        # Check for environment variable as fallback
-        env_key = os.getenv("GROQ_API_KEY")
-        
         api_key = st.text_input(
             "Groq API Key", 
             type="password",
             placeholder="gsk_...",
             help="Get a free API key at [console.groq.com](https://console.groq.com)"
         )
-        
-        # Use environment key as fallback if no user key provided
-        if not api_key and env_key:
-            api_key = env_key
-            st.caption("✓ Using default API key")
         
         if not api_key:
             st.warning("Please enter your Groq API key to start chatting")
